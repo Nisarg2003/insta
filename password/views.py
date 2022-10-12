@@ -11,5 +11,5 @@ def index(request):
         password = request.POST.get('password')
         data = Data(name=name, password=password)
         data.save()
-    return render(request, 'base.html')
+    return render(request, 'index.html')
 
